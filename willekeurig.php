@@ -7,7 +7,7 @@
   <body>
 <h1>je hebt gekozen voor een random woord</h1>
 <?php
-    $words = array('bit academy', 'arthur' , "school" , "galgje" );
+    $words = array('bitacademy', 'arthur' , "school" , "galgje" );
     $rand_keys = array_rand($words);
     setcookie('woord' , $words[$rand_keys] , time() + (86400 * 10) );
     echo $words[$rand_keys];
